@@ -1,5 +1,4 @@
 
-import Layout from './Layout/Layout';
 import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
