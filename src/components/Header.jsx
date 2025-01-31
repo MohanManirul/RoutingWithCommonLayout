@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -15,15 +15,15 @@ const Header = () => {
        
                 <nav id="navbar" className="navbar">
                     <ul>
-                        <li><Link className="nav-link scrollto active" to="/">Home</Link></li>
+                        <li><NavLink className="nav-NavLink scrollto active" to="/">Home</NavLink></li>
 
-                        <li><Link className="nav-link scrollto" to="/about-me">About</Link></li>
+                        <li><NavLink className="nav-NavLink scrollto" to="/about-me">About</NavLink></li>
 
-                        <li><Link className="nav-link scrollto" to="/skills">Skills</Link></li>
+                        <li><NavLink className="nav-NavLink scrollto" to="/skills">Skills</NavLink></li>
 
-                        <li><Link className="nav-link scrollto" to="/portfolio">Portfolio</Link></li> 
+                        <li><NavLink className="nav-NavLink scrollto" to="/portfolio">Portfolio</NavLink></li> 
 
-                        <li><Link className="nav-link scrollto" to="/contact">Contact</Link></li>
+                        <li><NavLink className="nav-NavLink scrollto" to="/contact">Contact</NavLink></li>
 
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"></i>
