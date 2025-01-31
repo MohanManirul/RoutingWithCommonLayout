@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import About from './Pages/About';
 import Skills from './Pages/Skills';
@@ -10,7 +10,7 @@ import NotFound from './Pages/NotFound';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

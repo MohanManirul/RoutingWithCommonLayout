@@ -15,15 +15,15 @@ const Header = () => {
        
                 <nav id="navbar" className="navbar">
                     <ul>
-                        <li><NavLink className="nav-NavLink scrollto active" to="/">Home</NavLink></li>
+                        <li><NavLink className={(isActive)=>{isActive?"active-item":"pending-item"}} to="/">Home</NavLink></li>
 
-                        <li><NavLink className="nav-NavLink scrollto" to="/about-me">About</NavLink></li>
+                        <li><NavLink className={(isActive)=>{isActive?"active-item":"pending-item"}} to="/about-me">About</NavLink></li>
 
-                        <li><NavLink className="nav-NavLink scrollto" to="/skills">Skills</NavLink></li>
+                        <li><NavLink className={(isActive)=>{isActive?"active-item":"pending-item"}} to="/skills">Skills</NavLink></li>
 
-                        <li><NavLink className="nav-NavLink scrollto" to="/portfolio">Portfolio</NavLink></li> 
+                        <li><NavLink className={(isActive)=>{isActive?"active-item":"pending-item"}} to="/portfolio">Portfolio</NavLink></li> 
 
-                        <li><NavLink className="nav-NavLink scrollto" to="/contact">Contact</NavLink></li>
+                        <li><NavLink className={(isActive)=>{isActive?"active-item":"pending-item"}} to="/contact">Contact</NavLink></li>
 
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"></i>
