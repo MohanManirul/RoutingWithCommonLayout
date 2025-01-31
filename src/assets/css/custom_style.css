@@ -1,10 +1,11 @@
 /* Active link (Green) */
-.nav ul li a.active-item {
+.navbar ul li a.active-item {
     color: green;
     font-weight: bold;
 }
 
 /* Inactive link (Red) */
-.nav ul li a.pending-item {
+.navbar ul li a.pending-item {
     color: red;
+    font-weight: normal;
 }
